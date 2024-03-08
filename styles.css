@@ -1,0 +1,51 @@
+form {
+    max-width: 1300px;
+    width: 100%;
+}
+
+@media (max-width: 680px){
+    .fila1{
+        width: 100%;
+    }
+    .fila1 div input{
+        min-width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    textarea{
+        min-width: 100%;
+    }
+}
+
+.fila1 div input{
+    width: 92%;
+}
+
+.fila2 div input{
+    width: 97%;
+    justify-content: flex;
+}
+
+.fila3 div input{
+    width: 94%;
+}
+
+.fila5 :last-child{
+    text-decoration: grey;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.btn-dark{
+    background-color: grey;
+    border: none;
+}
+
+.btn-primary{
+    border: none;
+}
+
+.badge{
+    letter-spacing: 5px;
+}

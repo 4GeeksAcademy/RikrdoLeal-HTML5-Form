@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/1aa5c74488.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<title>Payment Form Example</title>
+
+<body>
+  <form action="" class="m-3 border rounded">
+    <div>
+      <div class="px-3 bg-body-secondary border rounded-top">
+        <h1>Payment Form Example</h1>
+      </div>
+      <div class="p-3"><!--This is the middle box-->
+        <div><!--This is the content of the middle box-->
+          <div>
+            <!--This is the alert box-->
+            <div class="alert alert-danger" role="alert">
+              Some fields are missing
+            </div>
+          </div>
+          <div class="row d-flex fila1">
+            <!--This is the card info.-->
+            <div class="col-12 col-lg-6">
+              <!--card number-->
+              <p class="mb-2 mt-2">Card Number</p>
+              <input class="rounded-2 border-light m-1 p-1" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="20"
+                required>
+            </div>
+            <div class="col-12 col-lg-3">
+              <!--card CVC number-->
+              <p class="mb-2 mt-2">CVC Number</p>
+              <input class="rounded-2 border-light m-1 p-1" type="text" placeholder="123" maxlength="3" required>
+            </div>
+            <div class="col-12 col-lg-3">
+              <!-- Payment amount-->
+              <p class="mb-2 mt-2">Amount</p>
+              $<input class="rounded-2 border-light m-1 p-1" type="text" placeholder="Amount" required>
+            </div>
+          </div>
+          <div class="row d-flex fila2">
+            <!--Thi is the personal info.-->
+            <div class="col-12 col-lg-6"><!--First name-->
+              <p class="mb-2 mt-3">First Name</p>
+              <input class="rounded-2 border-light m-1 p-1" type="text">
+            </div>
+            <div class="col-12 col-lg-6"><!--Last name-->
+              <p class="mb-2 mt-3">Last Name</p>
+              <input class="rounded-2 border-light m-1 p-1" type="text">
+            </div>
+          </div>
+          <div class="row d-flex fila3">
+            <!--Addres Info.-->
+            <div class="col-12 col-lg-6 mt-1"><!--City-->
+              <p class="mb-2 mt-2">City</p>
+              <input class="rounded-2 border-light m-1 p-1" type="text">
+            </div>
+            <div class="col-12 col-lg-3 mt-5"><!--State Dropdown-->
+              <select class="form-select mb-3 border-dark-subtle" name="State" id="state">
+                <option size="10" value="pick">Pick a state</option>
+                <option value="madrid"> Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="valencia">Valencia</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-3"><!--Postal Code-->
+              <p class="mb-2 mt-3">Postal Code</p>
+              <input class="rounded-2 border-light m-1 p-1" type="text">
+            </div>
+          </div>
+          <div class="row d-flex fila4">
+            <!--Payment Metod and text box-->
+            <div class="col-12 col-lg-6">
+              <p class="mb-2 mt-2">We Accept:</p>
+              <div class="badge text-bg-secondary fs-3">
+                <input type="radio" id="master-card" name="credit-card" value="Master Card">
+                <label for="master-card"><i class="fa-brands fa-cc-mastercard"></i></label>
+                <input type="radio" id="visa" name="credit-card" value="Visa">
+                <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+                <input type="radio" id="diners-club" name="credit-card" value="Diners Club">
+                <label for="diners-club"><i class="fa-brands fa-cc-diners-club"></i></label>
+                <input type="radio" id="american-express" name="credit-card" value="American Express">
+                <label for="american-express"><i class="fa-brands fa-cc-amex"></i></label>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 fila5"><!--Text Box-->
+              <p class="mb-2 mt-2">Message</p>
+              <textarea class="rounded-2 border-dark-subtle m-1 p-1" name="" id="" cols="60" rows="5"></textarea>
+              <p>Add any notes here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end gap-2 bg-body-secondary rounded-bottom">
+        <!--This is the bottom box-->
+        <button type="button" class="btn btn-dark px-3 my-3">Cancel</button>
+        <button type="button" class="btn btn-primary px-3 m-3">Send</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </form>
+</body>
+
+</html>
